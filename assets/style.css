@@ -1,0 +1,22 @@
+.jumbotron {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
+}

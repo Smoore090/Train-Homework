@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+	<title>Train Schedule</title>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="jumbotron">
+			<h1>Train Schedule</h1>
+			<h2>Fill in the information below to add another train to the schedule</h2>
+			<h3 class="current-time">Current Time: </h3>
+		</div>
+	</div>
+
+		<div class="container">
+			<div class="row current-schedule">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="panel panel-default">
+						<div class="panel-heading">Current Train Schedule</div>
+						
+						<div class="panel-body">
+							<table class="table">
+
+                              <thead>
+                                <tr>
+                                  <th>Train Name</th>
+                                  <th>Destination</th>
+                                  <th>Frequency</th>
+                                  <th>Next Arrival</th>
+                                  <th>Minutes Away</th>
+                                </tr>
+                              </thead>
+
+                              <tbody id="data-goes-here">
+
+                              </tbody>
+
+                           </table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row add-train">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="panel panel-default">
+						<div class="panel-heading">Add a Train</div>
+						<div class="panel-body">
+
+                            <form id="add-train">
+                              <div class="form-group">
+                                <label for="text">Train Name</label>
+                                <input type="train-name" class="form-control" id="input-train-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">Destination</label>
+                                <input type="destination" class="form-control" id="input-destination">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">Frequency</label>
+                                <input type="frequency" class="form-control" id="input-frequency">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">Next Arrival</label>
+                                <input type="next-arrival" class="form-control" id="input-next-arrival">
+                              </div>
+                              <div class="form-group">
+                                <label for="text">Minutes Away</label>
+                                <input type="minutes-away" class="form-control" id="input-minutes-away">
+                              </div>
+                              
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+						</div>
+					 </div>
+				</div>
+			</div>
+
+		</div>
+	
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+
+<script src="assets/app.js"></script>
+
+
+</body>
+</html>
